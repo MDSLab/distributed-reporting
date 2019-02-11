@@ -1,0 +1,45 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "it.messinaservizibenecomune.utenti"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "it.messinaservizibenecomune.utenti"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "it.messinaservizibenecomune.utenti"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "it.messinaservizibenecomune.utenti"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "it.messinaservizibenecomune.utenti"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "it.messinaservizibenecomune.utenti"
+    },
+    "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "it.messinaservizibenecomune.utenti"
+    },
+    "cordova-plugin-firebase": {
+      "PACKAGE_NAME": "it.messinaservizibenecomune.utenti"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "it.messinaservizibenecomune.utenti"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "it.messinaservizibenecomune.utenti"
+    },
+    "cordova-plugin-request-location-accuracy": {
+      "PACKAGE_NAME": "it.messinaservizibenecomune.utenti"
+    }
+  },
+  "dependent_plugins": {}
+}

@@ -1,0 +1,15 @@
+page-splashlog {
+  #topButtons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #topButtons button{
+    flex: 1;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}

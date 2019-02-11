@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "MSBC",
+  "short_name": "MSBC",
+  "version": "it.messinaservizibenecomune.utenti",
+  "description": "L'app di MessinaServizi Bene Comune, sviluppata dal Dott. Andrea Centorrino nell'ambito della convenzione tra MessinaServizi Bene Comune SpA e il Dipartimento di Ingegneria dell'Università degli Studi di Messina. Responsabile Scientifico Prof. Francesco Longo.",
+  "author": "Andrea Centorrino - Dipartimento di Ingegneria - Università degli Studi di Messina",
+  "icons": [],
+  "start_url": "index.html"
+}

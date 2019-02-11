@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>400182942859-4m7j06u14u4278klh0righ6d0d09ahs4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.400182942859-4m7j06u14u4278klh0righ6d0d09ahs4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA98lm5Gve6vhxs5B3ZP4qV9Cn98aQADv4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>400182942859</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>it.messinaservizibenecomune.utenti</string>
+	<key>PROJECT_ID</key>
+	<string>aiutame-84f72</string>
+	<key>STORAGE_BUCKET</key>
+	<string>aiutame-84f72.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:400182942859:ios:fa9655139a4bf2b1</string>
+	<key>DATABASE_URL</key>
+	<string>https://aiutame-84f72.firebaseio.com</string>
+</dict>
+</plist>

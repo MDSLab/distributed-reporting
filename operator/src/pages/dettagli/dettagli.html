@@ -1,0 +1,116 @@
+<!--
+# SPDX-license-identifier: Apache-2.0
+#
+# Copyright (c) 2019 UniME - MDSLab
+#
+# Authors:  Andrea Centorrino <andrea.centorrino@gmail.com>
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Dettagli segnalazione</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+  <button *ngIf="dati.stato == 2" ion-button full (click)="chiudiSegnalazione(dati)" icon-start>
+    <ion-icon name="camera"></ion-icon>Chiudi la segnalazione
+  </button>
+    </ion-item>
+    <ion-item>
+  <button *ngIf="dati.capo == email && dati.stato >= 2" ion-button full (click)="lasciaSegnalazione(dati)" icon-start>
+    <ion-icon name="exit"></ion-icon>Lascia la segnalazione
+  </button>
+    </ion-item>
+    <ion-item *ngIf="dati.capo == email && dati.stato >= 2">
+
+  <ion-label>Seleziona referente:</ion-label>
+  <ion-select [(ngModel)]="selectedLeave" interface="popover">
+    <ion-option *ngFor="let sorvegliante of sorveglianti | async" value="{{sorvegliante.id}}" (ionSelect)="selezionaSorvegliante(sorvegliante,dati)">{{ sorvegliante.cognome }} {{ sorvegliante.nome }}</ion-option>
+  </ion-select>
+    </ion-item>
+    </ion-list>
+
+  <ion-card>
+    <ion-card-header>
+      Stato segnalazione
+    </ion-card-header>
+    <ion-card-content>
+      <a *ngIf="dati.stato == 0" ion-text color="secondary">chiusa</a><a *ngIf="dati.stato == 1" ion-text color="annullata">annullata</a><a *ngIf="dati.stato == 2" ion-text color="danger">aperta</a>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Data apertura
+    </ion-card-header>
+    <ion-card-content>
+      {{ dati.data_in }} - {{dati.ora_in}}
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Data chiusura
+    </ion-card-header>
+    <ion-card-content>
+      {{ dati.data_out }} - {{dati.ora_out}}
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Descrizione
+    </ion-card-header>
+    <ion-card-content>
+      {{ dati.descrizione }}
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Foto prima dell'intervento
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="dati.img_in" *ngIf="dati.img_in">
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Foto dopo l'intervento
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="dati.img_out" *ngIf="dati.img_out">
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Note coordinatore
+    </ion-card-header>
+    <ion-card-content>
+      {{ note_chiusura }}
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="transparent-card">
+    <ion-card-header>
+      Posizione
+    </ion-card-header>
+    <ion-card-content>
+      <div #mappa id="mappa" style="height:300px"></div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
